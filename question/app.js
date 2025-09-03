@@ -120,3 +120,52 @@ console.log("5 を 3 で割った余りは " + result + " です。");
 // 通常、Javascriptは関数内のみスコープが有効のため、
 // 関数foo内で定義した変数xは関数の外で参照できない。
 // そのため変数xが定義されていないというエラーが出力される。
+
+// 応用編問題
+// Q1
+let random = Math.floor(Math.random() * 10);
+console.log('random => ', random);
+
+// Q2
+function mySetTimeout(callback, delay) {
+  setTimeout(callback, delay);
+}
+
+mySetTimeout(function() {
+  console.log('Hello World!');
+}, 3000);
+
+// Q3
+let numbers = [];
+
+if (0 > numbers ) {
+  console.log('num is greater than 0');
+} else if (0 < numbers) {
+  console.log('num is greater than 0');
+} else if (0 === numbers) {
+  console.log('num is 0');
+}
+
+// Q4
+numbers = [];
+
+for (let i = 0; i < 100; i++) {
+  numbers.push(i);
+}
+
+console.log(numbers);
+
+// Q5
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for (let mix of mixed) {
+  if (typeof mix === 'number') {
+    if (mix % 2 === 0) {
+      console.log('even');
+    }else if (mix % 2 !== 0){
+      console.log('odd');
+    }
+  }else {
+    console.log('not number');
+  }
+}
