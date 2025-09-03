@@ -47,4 +47,76 @@ let averageAge = totalAge / playerList.length;
 
 console.log(averageAge);
 
+// Q6
+function sayHello() {
+  console.log('Hello');
+}
 
+sayHello();
+
+let sayWorld = function() {
+  console.log('World');
+}
+
+sayWorld();
+
+// Q7
+user = {
+  name: 'John',
+  age: 26,
+  bloodType: 'A',
+  favorite: 'card',
+  birthday: '2000-09-27',
+  sayHello: function() {
+    console.log('Hello!');
+  }
+};
+
+user.sayHello();
+
+// Q8
+let calc = {};
+
+calc.add = function(x, y) {
+  console.log(x + y);
+}
+
+calc.add(2, 5);
+
+calc.subtract = function(x, y) {
+  console.log(x - y);
+}
+
+calc.subtract(14, 4);
+
+calc.multiply = function(x, y) {
+  console.log(x * y);
+}
+
+calc.multiply(7, 7);
+
+calc.divide = function(x, y) {
+  console.log(x / y);
+}
+
+calc.divide(25, 5);
+
+// Q9
+function remainder(x, y) {
+  return x % y;
+}
+
+let result = remainder(5, 3);
+
+console.log("5 を 3 で割った余りは " + result + " です。");
+
+// Q10
+// function foo() {
+//   let x = 1;
+// }
+// console.log(x);
+
+// 上記の記述から変数xは関数fooで定義されていることがわかる。
+// 通常、Javascriptは関数内のみスコープが有効のため、
+// 関数foo内で定義した変数xは関数の外で参照できない。
+// そのため変数xが定義されていないというエラーが出力される。
