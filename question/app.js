@@ -127,11 +127,7 @@ let random = Math.floor(Math.random() * 10);
 console.log('random => ', random);
 
 // Q2
-function mySetTimeout(callback, delay) {
-  setTimeout(callback, delay);
-}
-
-mySetTimeout(function() {
+setTimeout(function() {
   console.log('Hello World!');
 }, 3000);
 
