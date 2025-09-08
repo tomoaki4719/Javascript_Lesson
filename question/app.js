@@ -16,9 +16,16 @@ let user = {
   age: 26,
   bloodType: 'A',
   favorite: 'card',
+  // Q7
+  birthday: '2000-09-27',
+  sayHello: function() {
+    console.log('Hello!');
+  }
 };
 
 console.log(user.age);
+
+user.sayHello();
 
 // Q4
 let playerList = [
@@ -61,18 +68,7 @@ let sayWorld = function() {
 sayWorld();
 
 // Q7
-user = {
-  name: 'John',
-  age: 26,
-  bloodType: 'A',
-  favorite: 'card',
-  birthday: '2000-09-27',
-  sayHello: function() {
-    console.log('Hello!');
-  }
-};
-
-user.sayHello();
+// Q3に記述済み
 
 // Q8
 let calc = {};
